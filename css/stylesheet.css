@@ -338,7 +338,7 @@ button[type="submit"]:hover {
 .cardsContainer {
   display: flex;
   column-gap: 20px;
-
+  overflow: hidden;
 }
 
 .cardsContainer card {
