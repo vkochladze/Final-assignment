@@ -18,6 +18,22 @@
   z-index: 1;
 }
 
+.burger {
+  display: none;
+  stroke-width: 2.5px;
+  stroke: #05BCCA;
+  background: url(/img/burger.png);
+  width: 28px;
+  height: 20px;
+}
+
+.xmark {
+  display: none;
+  background: url(/img/xmark.png);
+  width: 28px;
+  height: 28px;
+}
+
 .header ul {
   display: flex;
   gap: 4vw;
@@ -546,6 +562,7 @@ button[type="submit"]:hover {
 
 .sectionFourContainer {
   display: flex;
+  overflow: hidden;
 }
 
 .sectionFive {
@@ -733,7 +750,7 @@ button[type="submit"]:hover {
 .catalogFooter {
   width: 100%;
   position: absolute;
-  top: 2387px;
+  top: 2541px;
   background: #2C4246;
   padding: 48px;
 }
@@ -742,7 +759,7 @@ button[type="submit"]:hover {
   display: flex;
   width: 100%;
   position: absolute;
-  top: 2300px;
+  top: 2415px;
   place-content: center;
 }
 
@@ -933,8 +950,8 @@ button[type="submit"]:hover {
 }
 
 #fname {
-  width: 20%;
-  padding: 6px 99px 6px 8px;
+  width: 44%;
+  padding: 6px 0 6px 8px;
   align-items: center;
   background: #2C4246;
   border: none;
@@ -948,8 +965,8 @@ button[type="submit"]:hover {
 }
 
 #email {
-  width: 20%;
-  padding: 6px 39px 6px 8px;
+  width: 44%;
+  padding: 6px 0 6px 8px;
   align-items: center;
   background: #2C4246;
   border: none;
@@ -964,7 +981,7 @@ button[type="submit"]:hover {
 
 
 .textarea {
-  width: 44%;
+  width: 89%;
   height: 103px;
   align-items: center;
   flex-shrink: 0;
@@ -982,7 +999,7 @@ button[type="submit"]:hover {
 
 .sendMessage {
   display: inline-flex;
-  padding: 8px 83px;
+  padding: 8px 73px;
   justify-content: center;
   align-items: center;
   background: #C46A2B;
@@ -998,7 +1015,17 @@ button[type="submit"]:hover {
 }
 
 .map {
-  width: 30%;
-  margin-left: -32%;
-  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.contactSocials {
+  /* display: flex;
+  gap: 20px;
+  padding-top: 8px;
+  align-items: flex-end;
+  align-content: flex-end; */
 }

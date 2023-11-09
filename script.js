@@ -1,45 +1,72 @@
-let backgroundValue = 0;
+// // carousel
 
-leftIncrement = () => {
-  backgroundValue -= 1;
-  console.log(backgroundValue);
-}
+// let backgroundValue = 0;
 
-leftIncrementBG = () => {
-  if (backgroundValue % 2 === 0) {
-    document.getElementById("sectionOne").style.backgroundImage = 'url("img/bassCollection.jpeg")';
-    console.log("background changes to bass")
-} else {
-  document.getElementById("sectionOne").style.backgroundImage = 'url(img/newCollection.png)';
-  console.log("background changed to collection");
-}
-}
+// leftIncrement = () => {
+//   backgroundValue -= 1;
+//   console.log(backgroundValue);
+// };
 
-leftClick = () => {
-  leftIncrement();
-  leftIncrementBG();
-}
+// leftIncrementBG = () => {
+//   if (backgroundValue % 2 === 0) {
+//     document.getElementById("sectionOne").style.backgroundImage =
+//       'url("img/bassCollection.jpeg")';
+//     console.log("background changes to bass");
+//   } else {
+//     document.getElementById("sectionOne").style.backgroundImage =
+//       "url(img/newCollection.png)";
+//     console.log("background changed to collection");
+//   }
+// };
 
-rightClick = () => {
-  rightIncrement();
-  rightIncrementBG();
-}
+// leftClick = () => {
+//   leftIncrement();
+//   leftIncrementBG();
+// };
 
-rightIncrementBG = () => {
-  if (backgroundValue % 2 === 0) {
-    document.getElementById("sectionOne").style.backgroundImage = 'url("img/bassCollection.jpeg")';
-    console.log("background changes to bass")
-} else {
-  document.getElementById("sectionOne").style.backgroundImage = 'url(img/newCollection.png)';
-  console.log("background changed to collection");
-}
-}
+// rightClick = () => {
+//   rightIncrement();
+//   rightIncrementBG();
+// };
 
-rightIncrement = () => {
-  backgroundValue +=1;
-  console.log(backgroundValue);
-}
+// rightIncrementBG = () => {
+//   if (backgroundValue % 2 === 0) {
+//     document.getElementById("sectionOne").style.backgroundImage =
+//       'url("img/bassCollection.jpeg")';
+//     console.log("background changes to bass");
+//   } else {
+//     document.getElementById("sectionOne").style.backgroundImage =
+//       "url(img/newCollection.png)";
+//     console.log("background changed to collection");
+//   }
+// };
 
-document.getElementById("leftSlideControl").addEventListener("click", leftClick);
+// rightIncrement = () => {
+//   backgroundValue += 1;
+//   console.log(backgroundValue);
+// };
 
-document.getElementById("rightSlideControl").addEventListener("click", rightClick)
+// document
+//   .getElementById("leftSlideControl")
+//   .addEventListener("click", leftClick);
+
+// document
+//   .getElementById("rightSlideControl")
+//   .addEventListener("click", rightClick);
+
+// burger
+let burger = document.querySelector(".burger");
+let xmark = document.querySelector(".xmark");
+let nav = document.querySelector(".header_nav");
+
+burger.addEventListener("click", () => {
+  burger.style.display = "none";
+  xmark.style.display = "block";
+  nav.classList.add("show");
+});
+
+xmark.addEventListener("click", () => {
+  burger.style.display = "block";
+  xmark.style.display = "none";
+  nav.classList.remove("show");
+});

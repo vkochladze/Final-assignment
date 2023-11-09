@@ -1,0 +1,42 @@
+@media (max-width: 744px) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 4;
+        overflow: hidden;
+        min-width: 0px;
+    }
+
+    .cards:nth-child(even) {
+        display: none;
+    }
+
+    .languageSelector {
+        display: none;
+    }
+
+    .currencySelector {
+        display: none;
+    }
+
+    .header_nav {
+        position: fixed;
+        top: 120px;
+        left: -100%;
+        background-color: #012426;
+        border: 1px solid #05bcca;
+        padding: 5px;
+        width: 50%;
+        transition: .5s linear;
+    }
+
+    .header_ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 180px;
+    }
+
+    .show {
+        left: 0;
+    }
+}

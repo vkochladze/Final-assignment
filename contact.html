@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css" />
+    <script src="https://kit.fontawesome.com/085bce8105.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="laptop.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+
     <title>Contact</title>
 </head>
 
@@ -14,18 +19,21 @@
     <div class="main">
         <!-- Header -->
         <header class="header">
-            <nav>
-                <ul>
+            <nav class="header_nav">
+                <ul class="header_ul">
                     <a href="index.html">
                         <li>Home</li>
                     </a>
                     <a href="catalog.html">
                         <li>Catalog</li>
                     </a>
-                    <li>Contact Us</li>
+                    <a href="contact.html">
+                        <li>Contact Us</li>
+                    </a>
                 </ul>
             </nav>
-
+            <i class="burger"></i>
+            <i class="xmark"></i>
             <div class="logo">
                 <a href="index.html"><img src="img/logo.svg" alt="Logo of a small orange acoustic guitar" /></a>
             </div>
@@ -36,12 +44,12 @@
                     <button type="submit">Search</button>
                 </form>
 
-                <select name="language" id="">
+                <select class="languageSelector" name="language" id="">
                     <option value="EN">EN</option>
                     <option value="GE">GE</option>
                 </select>
 
-                <select name="currency" id="">
+                <select class="currencySelector" name="currency" id="">
                     <option value="USD">USD</option>
                     <option value="GEL">GEL</option>
                 </select>
@@ -89,14 +97,14 @@
                             style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                        <!-- <div class="socials">
-                            <a target="_blank" href="https://facebook.com"><img src="img/facebook.svg"
+                        <div class="contactSocials">
+                            <a target="_blank" href="https://facebook.com"><img src="img/facebook_blue.svg"
                                     alt="facebook social icon" /></a>
-                            <a target="_blank" href="https://whatsapp.com"><img src="img/whatsapp.svg"
+                            <a target="_blank" href="https://whatsapp.com"><img src="img/whatsapp_blue.png"
                                     alt="whatsapp social icon" /></a>
-                            <a target="_blank" href="https://instragram.com"><img src="img/isntagram.png"
+                            <a target="_blank" href="https://instragram.com"><img src="img/instagram_blue.png"
                                     alt="instagram social icon" /></a>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </h2>
@@ -145,6 +153,8 @@
         </div>
     </footer>
     </div>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
