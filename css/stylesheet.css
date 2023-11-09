@@ -22,14 +22,14 @@
   display: none;
   stroke-width: 2.5px;
   stroke: #05BCCA;
-  background: url(/img/burger.png);
+  background: url("../img/burger.png");
   width: 28px;
   height: 20px;
 }
 
 .xmark {
   display: none;
-  background: url(/img/xmark.png);
+  background: url("../img/xmark.png");
   width: 28px;
   height: 28px;
 }
@@ -156,7 +156,7 @@ button[type="submit"]:hover {
   width: 100%;
   top: 275px;
   height: 480px;
-  background-image: url("/img/newCollection.png");
+  background-image: url("../img/newCollection.png");
   justify-content: center;
 }
 
@@ -234,7 +234,7 @@ button[type="submit"]:hover {
 }
 
 .sectionTwoDivCl {
-  background-image: url(/img/classsicalGuitar.png);
+  background-image: url("../img/classsicalGuitar.png");
   width: 404px;
   height: 240px;
   padding: 20px;
@@ -242,7 +242,7 @@ button[type="submit"]:hover {
 }
 
 .sectionTwoDivAc {
-  background-image: url(/img/acousticGuitar.png);
+  background-image: url("../img/acousticGuitar.png");
   width: 404px;
   height: 240px;
   padding: 20px;
@@ -438,7 +438,7 @@ button[type="submit"]:hover {
 
 
 .sectionFourCard1 {
-  background-image: url(/img/sectionFourCard1.png);
+  background-image: url("../img/sectionFourCard1.png");
   width: 404px;
   height: 440px;
   display: flex;
@@ -468,7 +468,7 @@ button[type="submit"]:hover {
   background: linear-gradient(rgba(18, 199, 199, 0.5), rgba(18,
         199,
         199,
-        0.5)), url(/img/sectionFourCard3.png);
+        0.5)), url("../img/sectionFourCard3.png");
   padding: 24px;
   display: flex;
   justify-content: space-between;
@@ -524,7 +524,7 @@ button[type="submit"]:hover {
 .sectionFourCard2BottomContainer p {}
 
 .sectionFourCard3 {
-  background-image: url(/img/sectionFourCard3.png);
+  background-image: url("../img/sectionFourCard3.png");
   width: 404px;
   height: 440px;
   display: flex;
@@ -568,7 +568,7 @@ button[type="submit"]:hover {
 .sectionFive {
   width: 100%;
   height: 320px;
-  background: url(/img/sectionFiveBG.png);
+  background: url("../img/sectionFiveBG.png");
   display: flex;
   position: absolute;
   top: 2920px;
@@ -872,7 +872,7 @@ button[type="submit"]:hover {
 .contactSection {
   width: 100%;
   height: 720px;
-  background: url(/img/contactBG.png);
+  background: url("../img/contactBG.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
